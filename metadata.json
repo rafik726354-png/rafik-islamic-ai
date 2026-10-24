@@ -1,0 +1,6 @@
+{
+  "name": "Rafik Islamic AI — রাফিক ইসলামিক এআই",
+  "description": "কুরআন, হাদিস ও নির্ভরযোগ্য ইসলামিক জ্ঞানের বিশ্বস্ত সঙ্গী — Rafik Islamic AI: Quran reader with Bengali & English translations, verified audio recitation, authentic Islamic library, and source-grounded Islamic AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
