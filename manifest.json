@@ -1,0 +1,17 @@
+{
+  "name": "Rafik Islamic AI — রাফিক ইসলামিক এআই",
+  "short_name": "Rafik Islamic AI",
+  "description": "কুরআন, হাদিস ও নির্ভরযোগ্য ইসলামিক জ্ঞানের বিশ্বস্ত সঙ্গী — Quran Reader, Recitations & Islamic AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#022c22",
+  "theme_color": "#064e3b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
