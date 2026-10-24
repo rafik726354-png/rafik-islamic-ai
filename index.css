@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #FFF7D6;
+    --bg-card: #FFFBEA;
+    --bg-canvas: #F7F0D8;
+    --text-main: #493719;
+    --text-muted: #7A6240;
+    --accent-gold: #D9A514;
+    --accent-gold-dark: #8C6207;
+    --accent-green: #176B50;
+  }
+
+  body {
+    font-family: 'Hind Siliguri', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FFF7D6;
+    color: #493719;
+    overflow-x: hidden;
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+}
+
+.font-bengali {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-sans-main {
+  font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+}
+
+/* Islamic Geometric Pattern Background on Warm Ivory Canvas */
+.bg-islamic-pattern {
+  background-color: #FFF7D6;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(217, 165, 20, 0.06) 0%, transparent 65%),
+    radial-gradient(circle at 100% 0%, rgba(23, 107, 80, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(217, 165, 20, 0.05) 0%, transparent 50%),
+    radial-gradient(rgba(217, 165, 20, 0.16) 1px, transparent 0);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+}
+
+/* 3D Raised & Embossed Typography */
+.text-3d-raised {
+  color: #493719;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.95), 0 2px 4px rgba(73, 55, 25, 0.22);
+}
+
+.text-3d-gold {
+  color: #8C6207;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.95), 0 2px 3px rgba(217, 165, 20, 0.35);
+}
+
+.text-3d-arabic {
+  color: #382507;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9), 0 2px 5px rgba(73, 55, 25, 0.2);
+}
+
+/* Gold Metallic Foil Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #7D5106 0%, #B8820B 35%, #D9A514 65%, #7D5106 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
+}
+
+/* 3D Elevated Cards */
+.card-3d {
+  background-color: #FFFBEA;
+  border: 1px solid rgba(217, 165, 20, 0.28);
+  box-shadow: 0 4px 14px -2px rgba(73, 55, 25, 0.08), 0 2px 5px -1px rgba(73, 55, 25, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.card-3d-hover {
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-3d-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(217, 165, 20, 0.65);
+  box-shadow: 0 10px 24px -4px rgba(73, 55, 25, 0.12), 0 4px 8px -2px rgba(73, 55, 25, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+/* 3D Tactile Buttons */
+.btn-3d-gold {
+  background: linear-gradient(180deg, #F3C43D 0%, #D9A514 100%);
+  color: #382507;
+  border: 1px solid rgba(181, 138, 53, 0.7);
+  box-shadow: 0 3px 6px rgba(73, 55, 25, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-3d-gold:active {
+  transform: translateY(1.5px);
+  box-shadow: 0 1px 2px rgba(73, 55, 25, 0.25), inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.btn-3d-subtle {
+  background: #FFFBEA;
+  color: #493719;
+  border: 1px solid rgba(217, 165, 20, 0.35);
+  box-shadow: 0 2px 4px rgba(73, 55, 25, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+.btn-3d-subtle:hover {
+  background: #FFF7D6;
+  border-color: rgba(217, 165, 20, 0.6);
+  box-shadow: 0 4px 8px rgba(73, 55, 25, 0.09), inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+.btn-3d-subtle:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(73, 55, 25, 0.12);
+}
+
+/* Gold & Emerald Accent Glows */
+.gold-glow {
+  box-shadow: 0 0 20px rgba(217, 165, 20, 0.22);
+}
+
+.emerald-accent-border {
+  border-color: rgba(23, 107, 80, 0.3);
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF7D6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9A514;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8820B;
+}
